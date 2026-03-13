@@ -12,7 +12,7 @@ Develop a server-side web application that demonstrates proficiency in user auth
 
 ## 1. Data Structure (Predefined Users)
 Do not use a database for this assignment. Instead, define an object in your app.js to store user credentials.
-
+```
 const users = {
     "admin": {
         username: "admin",
@@ -29,6 +29,7 @@ const users = {
         bio: "Full-stack enthusiast and coffee drinker."
     }
 };
+```
 
 ## 2. Assignment Requirements
 ### Task A: Authentication Flow
