@@ -1,0 +1,16 @@
+{
+  "name": "homework8-login-page",
+  "version": "1.0.0",
+  "description": "Express.js authentication and state management assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "hbs": "^4.2.0"
+  }
+}

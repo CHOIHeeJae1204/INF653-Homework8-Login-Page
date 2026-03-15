@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Login</h1>
+
+    {{#if error}}
+        <p class="error">{{error}}</p>
+    {{/if}}
+
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="theme-toggle">
+        <a href="/toggle-theme">Switch to {{nextThemeLabel}} Mode</a>
+    </div>
+</div>

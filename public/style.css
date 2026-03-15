@@ -1,0 +1,151 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #4a90d9;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+.error {
+    background-color: #fdd;
+    color: #c00;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.theme-toggle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.theme-toggle a,
+.button-group a {
+    display: inline-block;
+    margin: 8px 4px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    background-color: #888;
+    color: white;
+}
+
+.theme-toggle a:hover,
+.button-group a:hover {
+    background-color: #666;
+}
+
+.button-group .logout {
+    background-color: #e05555;
+}
+
+.button-group .logout:hover {
+    background-color: #c03333;
+}
+
+.profile-info {
+    margin: 20px 0;
+    line-height: 2;
+}
+
+.button-group {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Light mode */
+body.light {
+    background-color: #f0f2f5;
+    color: #222;
+}
+
+body.light .container {
+    background-color: #ffffff;
+}
+
+body.light input {
+    background-color: #fff;
+    color: #222;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #242424;
+    color: #e0e0e0;
+}
+
+body.dark .container {
+    background-color: #454545;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+body.dark input {
+    background-color: #323232;
+    color: #e0e0e0;
+    border-color: #323232;
+}
+
+body.dark button[type="submit"] {
+    background-color: #2b2b2b;
+}
+
+body.dark button[type="submit"]:hover {
+    background-color: #707070;
+}
